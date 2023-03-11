@@ -1,6 +1,6 @@
 from documentcloud.addon import SoftTimeOutAddOn
 
-class ChangeVisibility(SoftTimeoutAddOn):
+class ChangeVisibility(SoftTimeOutAddOn):
     """Add-On that changes access level for large set of documents"""
     def main(self):
         for document in self.get_documents():
