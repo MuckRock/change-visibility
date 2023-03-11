@@ -1,7 +1,6 @@
 title: Change Visibility
 description: This is an updated simple test add-on
 type: object
-
 documents:
   - query
 properties:
