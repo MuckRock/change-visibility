@@ -10,4 +10,6 @@ properties:
     default: private
 required:
   - access
+categories:
+  - bulk
 version: 2
