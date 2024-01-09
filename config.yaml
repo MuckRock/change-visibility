@@ -6,9 +6,13 @@ documents:
   - query
 properties:
   access:
-    title: Access level of the annotations (public, private, organization)
+    title: Access level
     type: string
     default: private
+    enum:
+      - private
+      - organization
+      - public
 required:
   - access
 categories:
