@@ -1,5 +1,5 @@
 title: Change Visibility
-description: This Add-On changes the access level of all documents in the current query. 
+description: Change the access level of all documents in the current search view that you own. 
 instructions: ''
 type: object
 documents:
