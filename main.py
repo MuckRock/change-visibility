@@ -18,7 +18,7 @@ class ChangeVisibility(SoftTimeOutAddOn):
                     pass
         sfiles = "file" if successes == 1 else "files"
         efiles = "file" if errors == 1 else "files"
-        self.set_message(f"Successfully changed the access level on {successes} {sfiles}. Skipped {errors} {efiles}."
+        self.set_message(f"Successfully changed the access level on {successes} {sfiles}. Skipped {errors} {efiles}.")
             
 if __name__ == "__main__":
     ChangeVisibility().main()
