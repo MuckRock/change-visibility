@@ -4,7 +4,7 @@ from documentcloud.exceptions import APIError
 class ChangeVisibility(SoftTimeOutAddOn):
     """Add-On that changes access level for large set of documents"""
     def main(self):
-        failures = 0
+        errors = 0
         successes = 0
         for document in self.get_documents():
             if document.edit_access:
