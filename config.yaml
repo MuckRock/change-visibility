@@ -4,6 +4,7 @@ instructions: ''
 type: object
 documents:
   - query
+  - selected
 properties:
   access:
     title: Access level
