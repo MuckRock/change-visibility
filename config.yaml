@@ -1,5 +1,5 @@
 title: Change Visibility
-description: Change the access level of all documents in the current search view that you own. You can do this to publish or make public documents. You can also make documents private or available to just your organization.  
+description: Change the access level of all documents in the current search view that you own. You can do this to publish or make documents public. You can also make documents private or available to just your organization.  
 instructions: ''
 type: object
 documents:
