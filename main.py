@@ -1,9 +1,11 @@
 from documentcloud.addon import SoftTimeOutAddOn
 from documentcloud.exceptions import APIError
+import time
 
 class ChangeVisibility(SoftTimeOutAddOn):
     """Add-On that changes access level for large set of documents"""
     def main(self):
+        self.client.session.headers.update({'User-Agent': 'Change Visibility Add-On'})
         errors = 0
         successes = 0
         for document in self.get_documents():
@@ -16,6 +18,7 @@ class ChangeVisibility(SoftTimeOutAddOn):
                     self.set_message("cannot change access level on document already processing")
                     errors += 1
                     pass
+            time.sleep(5)
         sfiles = "file" if successes == 1 else "files"
         efiles = "file" if errors == 1 else "files"
         self.set_message(f"Successfully changed the access level on {successes} {sfiles}. Skipped {errors} {efiles}.")
